@@ -1,0 +1,28 @@
+Passo a passo das primeiras configurações do git e primeiro commit :
+
+1-  configure o seu nome de usuário e endereço de e-mail para que os commit sejam associados aos seus repositórios.
+
+> git config --global user.name "Fulano"
+> git config --global user.email Fulano@example.com
+
+2- Entre na pasta criada para o seu projeto e através do comando (git init) que ira inicializa um novo repositório git na pasta contendo todos os arquivos do seu repositório.
+
+3- Para tornar um arquivo da sua pasta monitorado(arquivo que está sendo rastreado pelo git) o comando a seguir coloca um arquivo na área de preparação, o que significa que eu quero que as alterações desse arquivo estejam no próximo commit.
+
+> git add arquivo.extensao
+
+4 -  Salvar as mudanças com uma mensagem.
+
+> git commit -m " Meu primeiro commit "
+
+5- Conectar o repositório local com o remoto.
+
+> git remote add origin https://CaminhodoMeuRepositório 
+
+6- Renomear a branch atual para main.
+
+>  git branch -M main
+
+7- Enviando o commit do meu repositório local para o repositório remoto.
+
+> git push -u origin main
